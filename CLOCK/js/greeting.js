@@ -37,10 +37,9 @@ function onLoginSubmit(event){
 };
 
 function paintGreetings(username){
-    greeting.innerText = `Hello ${username} nice to meet you`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
     loginForm.classList.add(HIDDEN_CLASSNAME);
-    localStorage.removeItem(USRENAME_KEY);
+
 }
 
 const savedUsername = localStorage.getItem(USRENAME_KEY);
